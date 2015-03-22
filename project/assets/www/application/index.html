@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/20ae2c8d51b2507244e598844414ecdec2615ce3.css">
+
+  <script type="text/javascript">
+    __meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.0.4.1%22%2C%22ROOT_URL%22%3A%22http%3A%2F%2Flocalhost%3A3000%2F%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22DDP_DEFAULT_CONNECTION_URL%22%3A%22http%3A%2F%2Flocalhost%3A3000%22%2C%22autoupdateVersionCordova%22%3A%22013e6a32890fd5db249e371242639d7a16d7fe3d%22%2C%22appId%22%3A%221b2nmx5l5d6811tvz18q%22%7D"));
+
+    if (/Android/i.test(navigator.userAgent)) {
+      // When Android app is emulated, it cannot connect to localhost,
+      // instead it should connect to 10.0.2.2
+      // (unless we're using an http proxy; then it works!)
+      if (!__meteor_runtime_config__.httpProxyPort) {
+        __meteor_runtime_config__.ROOT_URL = (__meteor_runtime_config__.ROOT_URL || '').replace(/localhost/i, '10.0.2.2');
+        __meteor_runtime_config__.DDP_DEFAULT_CONNECTION_URL = (__meteor_runtime_config__.DDP_DEFAULT_CONNECTION_URL || '').replace(/localhost/i, '10.0.2.2');
+      }
+    }
+  </script>
+
+  <script type="text/javascript" src="/cordova.js"></script>
+  <script type="text/javascript" src="/f694abc6bfb926b4f28a27d0e18d32c29d41640c.js"></script>
+
+
+  <title>crosstest3</title>
+</head>
+
+<body>
+  
+</body>
+</html>
